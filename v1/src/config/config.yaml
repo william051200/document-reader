@@ -1,0 +1,26 @@
+# Document Reader API Configuration
+
+# API server settings
+api:
+  host: 0.0.0.0
+  port: 8000
+  debug: false
+
+# Application settings
+app:
+  project_name: Document Reader
+  output_directory: outputs
+
+# Default technology
+default_technology: tesseract
+
+# Technology-specific settings
+technologies:
+  tesseract:
+    lang: eng
+    config: ""
+  
+  openai:
+    model: gpt-4
+    max_tokens: 1000
+    temperature: 0.0
